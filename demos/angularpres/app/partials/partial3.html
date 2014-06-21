@@ -1,0 +1,85 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Scopes Concept</h3>
+  </div>
+  <div class="panel-body">
+    Scope is in a particular Context based evaluation
+    <ul class="list-group">
+		<li class="list-group-item">
+			&lt;div ng-app &gt;&lt;/div&gt; Scope is basically closed in this div
+		</li>
+		<li class="list-group-item">
+		$rootScope is the higer level state of scope heirarchy,
+		if we want to create new child scope we need $rootscope.$new
+		</li>
+		<li class="list-group-item">
+		we would use Angular Batarang Chrome Extension for listing out the scope key pairs in the application
+		</li>
+		<li class="list-group-item">
+			$watch is used for Watching any model changes
+			$apply is used for propagate the model changed and evaluating the anything into the angular context
+			function $apply(expr) {<br>
+					  try {<br>
+					    return $eval(expr);<br>
+					  } catch (e) {<br>
+					    $exceptionHandler(e);<br>
+					  } finally {<br>
+					    $root.$digest();<br>
+					  }<br>
+					}<br>
+		</li>
+		<li class="list-group-item">
+			Expression are Evaluated in the based on the compilation link from the scope
+		</li>
+		<li class="list-group-item">
+			Nested Scopes  = Child Scope / Isolated Scope ( They are different ) - ( they are made with prototype inheritance)
+		</li>
+		<li class="list-group-item">
+			In MVC Pattern we would say <br>
+			Model is Scope of Angular Framework <br>
+			Controller is we can say Controller which would hold the scope communication with view <br>
+			View is the Obvious DOM Part we see the angular framework
+		</li>
+		<li class="list-group-item">
+		    &lt;li ng-repeat="name in names"&gt;{{name}} from {{department}}&lt;/li&gt; <br>
+			ngRepeat creates a new scope for evaluation of value 
+		</li>
+		<li class="list-group-item">
+			Emiting &amp; Broadcasting is a concept of push/firing up scoping in heirarchies <br>
+			Emting - Push to Upper Hirarchy
+			Broadcasting  - Push to Lower Hierarchy
+		</li>
+		<li class="list-group-item">
+			Scope Life Cycle
+			<ul class="list-group">
+			  <li class="list-group-item">Creation - $injector</li>
+			  <li class="list-group-item">Watcher Registration - $scope.watch()</li>
+			  <li class="list-group-item">Model Mutation - $scope.apply()</li>
+			  <li class="list-group-item">Model Observation - $scope.digest()</li>
+			  <li class="list-group-item">Scope Destruction - $scope.destroy()</li>
+			</ul>
+		</li>
+		<li class="list-group-item">
+			Scope and Directives
+			<ul class="list-group">
+			  <li class="list-group-item">In Directives, Scope watches the expression values with $watch to update the view</li>
+			  <li class="list-group-item">After that it will use $apply to to update completly to view</li>
+			  <li class="list-group-item">Compilation of scope comes mostly in creating child scopes with directives such as ngRepeat</li>
+			</ul>
+		</li>
+		<li class="list-group-item">
+			<img src="app/img/concepts-runtime.png" alt="">
+			$evalSync is such as such a synchronizer for putting to watching in digest loop with a queue of options
+		</li>
+		<li class="list-group-item">
+			$on(name,listener)  we can call "$emit(name)" <br>
+			Easy for Custom Events and Core Events links <br>
+			$on('customevetn',listener) and $on('click|keyup....',listner)
+		</li>
+		<li class="list-group-item">
+			$watch and $watchCollection, which can be used watching the expression an list/array of expression values
+			$id is the unique identification of a scope
+		</li>
+	</ul>
+  </div>
+</div>

@@ -1,0 +1,56 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Modules</h3>
+  </div>
+  <div class="panel-body">
+	<ul class="list-group">
+	  <li class="list-group-item">
+		 Applications have a main method which instantiates, wires, and bootstraps the application.
+		 <ul class="list-group">
+		  <li class="list-group-item">The process is more declarative which is easier to understand</li>
+		  <li class="list-group-item">In unit-testing there is no need to load all modules, which may aid in writing unit-tests.</li>
+		  <li class="list-group-item">Additional modules can be loaded in scenario tests, which can override some of the configuration and help end-to-end test the application</li>
+		  <li class="list-group-item">Third party code can be packaged as reusable modules.</li>
+		  <li class="list-group-item">The modules can be loaded in any/parallel order (due to delayed nature of module execution).</li>
+		</ul> 
+	  </li>
+	  <li class="list-group-item">
+	  	Configuration <br>
+	  	config(configFn)
+	  </li>
+	  <li class="list-group-item">Run <br>
+		run(initializationFn)
+	  </li>
+	  <li class="list-group-item">Factory <br>
+		factory(name, providerFunction)
+	  </li>
+	  <li class="list-group-item">Directives <br>
+		directive(name, directiveFactory)
+	  </li>
+	  <li class="list-group-item">Service <br>
+		service(name, constructor)
+	  </li>
+	  <li class="list-group-item">Provider <br>
+		provider(name, providerType)
+	  </li>
+	  <li class="list-group-item">Value <br>
+		value(name, object) - Configurable
+	  </li>
+	  <li class="list-group-item">Constant <br>
+		constant(name, object) - Non Configurable
+	  </li>
+	  <li class="list-group-item">Filter <br>
+		filter(name, filterFactory)
+	  </li>
+	  <li class="list-group-item">Controller <br>
+		controller(name, constructor)
+	  </li>
+	  <li class="list-group-item">Animation <br>
+		animation(name, animationFactory)
+	  </li>
+	  <li class="list-group-item">Animation <br>
+		Asynchronous Loading is Possible with $injector (e.g. Lazyloading &amp; Dynamic LOading)
+	  </li>
+	</ul>
+  </div>
+</div>

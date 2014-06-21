@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en" ng-app>
+	<head>
+		<title>Angular-RequireJS Presentation Demo</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="app/css/terminal.css">
+		<style>
+		body,svg,html{
+			margin: 0;
+			padding: 0;
+		}
+		svg {
+			position: absolute;
+		}
+		</style>
+	</head>
+	<body >
+		<div id="wrapper">
+		</div>
+		<iframe src="//slid.es/kirankumaramruthaluri/angular-js/embed" width="100%" height="550" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+		<script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+		<script src="app/js/jterminal.js"></script>
+		<script>
+			$(function($) {
+			    $('body').terminal(function(command, term) {
+			        if (command == "cd") {
+			            term.echo("command line is still not activated please try later");
+			        }
+			        else if (command == "docs") {
+			            window.location="app.html";
+			        }
+			        else if (command == "quit") {
+			            window.close();
+			        }   
+			    },{
+					greetings: "Angular JS Demo", 
+				    name: 'innominds',
+			        prompt: 'innominds> '
+			    });
+			});	
+		</script>
+	</body>
+</html>

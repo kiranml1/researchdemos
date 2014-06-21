@@ -1,0 +1,36 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Controllers</h3>
+  </div>
+  <div class="panel-body">
+    Controllers can be used as alias with "as" interpolation construct in the angular js markup attributes
+    Do not use Controllers for:
+	Any kind of DOM manipulation — Controllers should contain only business logic. DOM manipulation (the presentation logic of an application) is well known for being hard to test. Putting any presentation logic into Controllers significantly affects testability of the business logic. Angular offers databinding for automatic DOM manipulation. If you have to perform your own manual DOM manipulation, encapsulate the presentation logic in directives.
+	Input formatting — Use angular form controls instead.
+	Output filtering — Use angular filters instead.
+	Sharing stateless or stateful code across Controllers — Use angular services instead.
+	Managing the life-cycle of other components (for example, to create service instances).
+  </div>
+</div>
+<div class="list-group">
+  <a href="#" class="list-group-item active">
+    <h4 class="list-group-item-heading">Controller Communication</h4>
+    <p class="list-group-item-text">It is done with Services Factories Constants Values Providers</p>
+  </a>
+</div>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Form Controller</h3>
+  </div>
+  <div class="panel-body">
+  <iframe width="100%" height="500" src="http://jsfiddle.net/kirankumar_amruthaluri/hMQ5j/4/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+  </div>
+</div>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">ng-model</h3>
+  </div>
+  <div class="panel-body">
+    <iframe width="100%" height="500" src="http://embed.plnkr.co/6l5oBcGOr1OPI9spFcSM/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+  </div>
+</div>

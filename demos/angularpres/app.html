@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en" ng-app>
+	<head>
+		<title>Angular-RequireJS Presentation Demo</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<link rel="stylesheet" type="text/css" media="all" href="app/css/app.css" />
+		<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
+		<link rel="stylesheet" type="text/css" href="bower_components/codemirror/lib/codemirror.css"/>
+    	<link rel="stylesheet" type="text/css" href="bower_components/codemirror/theme/ambiance.css"/>
+	</head>
+	<body >
+		<div id="wrapper">
+		      <!-- Sidebar -->
+		      <div id="sidebar-wrapper">
+		        <ul class="sidebar-nav">
+		          <li><a href="#/intro">Basic Core Directives ( ng ) </a></li>
+		          <li><a href="#/services">Understanding Services</a></li>
+		          <li><a href="#/modules">Modules</a></li>
+		          <li><a href="#/controllers">Controllers</a></li>
+		          <li><a href="#/di">Dependency Injection</a></li>
+		          <li><a href="#/comm">Compilation</a></li>
+		          <li><a href="#/css">CSS Based Angular</a></li>
+		          <li><a href="#/scopes">Scopes</a></li>
+		          <li><a href="#/filters">Filters</a></li>
+		          <li><a href="#">Communication</a></li>
+		          <li><a href="#">Testing</a></li>
+		          <li><a href="#">Build &amp; Automation</a></li>
+		          <li><a href="#">Require JS</a></li>
+		          <li><a href="#/practises">Best Resources &amp; Advices</a></li>
+		          <li><a class="btn-default" href="index.html">Back</a></li>
+		        </ul>
+		      </div>
+		          
+		      <!-- Page content -->
+		      <div id="page-content-wrapper" ng-view></div>
+		</div>
+		<script data-main="app/js/main" src="bower_components/requirejs/require.js"></script>
+		<script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+		<script src="bower_components/bootstrap/js/tab.js"></script>		
+	</body>
+</html>
