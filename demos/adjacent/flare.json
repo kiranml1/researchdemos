@@ -1,0 +1,139 @@
+{
+		 "name": "flare",
+		 "children": [{
+				"name":"Quarter 1",
+				"parent":null,
+				"children": [
+					{
+						"name":"Quarter 2",
+						"parent":null,
+						"children": [],
+						"size":100000
+					},{
+						"name":"Quarter 2",
+						"parent":null,
+						"children": [],
+						"size":100000
+					}
+				],
+				"size":500000
+			},{
+				"name":"Quarter 2",
+				"parent":null,
+				"children": [{
+				"name":"Quarter 1",
+				"parent":null,
+				"children": [
+					{
+						"name":"Quarter 2",
+						"parent":null,
+						"children": [],
+						"size":100000
+					},{
+						"name":"Quarter 2",
+						"parent":null,
+						"children": [],
+						"size":100000
+					}
+				],
+				"size":500000
+			},{
+				"name":"Quarter 2",
+				"parent":null,
+				"children": [],
+				"size":100000
+			},{
+				"name":"Quarter 2",
+				"parent":null,
+				"children": [{
+				"name":"Quarter 1",
+				"parent":null,
+				"children": [
+					{
+						"name":"Quarter 2",
+						"parent":null,
+						"children": [],
+						"size":100000
+					},{
+						"name":"Quarter 2",
+						"parent":null,
+						"children": [],
+						"size":100000
+					}
+				],
+				"size":500000
+			},{
+				"name":"Quarter 2",
+				"parent":null,
+				"children": [],
+				"size":100000
+			},{
+				"name":"Quarter 2",
+				"parent":null,
+				"children": [],
+				"size":100000
+			}],
+				"size":100000
+			}],
+				"size":100000
+			},{
+				"name":"Quarter 2",
+				"parent":null,
+				"children": [{
+				"name":"Quarter 1",
+				"parent":null,
+				"children": [
+					{
+						"name":"Quarter 2",
+						"parent":null,
+						"children": [],
+						"size":100000
+					},{
+						"name":"Quarter 2",
+						"parent":null,
+						"children": [{
+				"name":"Quarter 1",
+				"parent":null,
+				"children": [
+					{
+						"name":"Quarter 2",
+						"parent":null,
+						"children": [],
+						"size":100000
+					},{
+						"name":"Quarter 2",
+						"parent":null,
+						"children": [],
+						"size":100000
+					}
+				],
+				"size":500000
+			},{
+				"name":"Quarter 2",
+				"parent":null,
+				"children": [],
+				"size":100000
+			},{
+				"name":"Quarter 2",
+				"parent":null,
+				"children": [],
+				"size":100000
+			}],
+						"size":100000
+					}
+				],
+				"size":500000
+			},{
+				"name":"Quarter 2",
+				"parent":null,
+				"children": [],
+				"size":100000
+			},{
+				"name":"Quarter 2",
+				"parent":null,
+				"children": [],
+				"size":100000
+			}],
+				"size":100000
+			}]
+}

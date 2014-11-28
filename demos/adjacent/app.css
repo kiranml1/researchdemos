@@ -1,0 +1,99 @@
+/* app css stylesheet */
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+  content: "";
+  padding: 0;
+}
+
+/*
+  Directive CSS
+ */
+
+.container {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.col-header , .col-blocks {
+  fill:#ccc;
+}
+
+body {
+  background: #e8e9e9;
+}
+
+svg {
+  background: #e8e9e9;
+}
+
+.stack-container {
+  border: 2px solid #000;
+}
+
+.stack-bar text{
+  font-size:14px;
+}
+
+rect {
+  stroke:#aaa;
+  fill: #fff;
+  fill-opacity: .8;
+}
+
+rect:hover {
+  stroke:#000;
+}
+
+rect.parent {
+  cursor: pointer;
+  fill: #fff;
+  stroke:#aaa;
+  stroke-width:2px;
+}
+
+rect.parent:hover {
+  stroke:#000;
+}
+
+rect.head {
+  cursor: pointer;
+  fill: #323646;
+  stroke:#ccc;
+  stroke-width:2px;
+}
+
+text.head {
+  fill:#fff;
+  font-weight: bold;
+}
+
+text {
+  pointer-events: none;
+  text-anchor: middle;
+}
+
+svg text::selection { background: none; }

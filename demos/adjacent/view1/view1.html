@@ -1,0 +1,11 @@
+<div class="container">
+	<div class="row">
+		<div class="row">
+			<select ng-model="url" ng-options="url.read for url in urls"></select>
+		</div>
+		<div class="stack-container">
+			<stacked-bar-view attrs="attrs" width="1200" height="700" item="url">
+			</stacked-bar-view>
+		</div>
+	</div>
+</div>
