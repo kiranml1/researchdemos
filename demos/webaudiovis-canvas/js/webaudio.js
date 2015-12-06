@@ -61,7 +61,7 @@ function play() {
     fft.connect(ctx.destination); 
      
     //play immediately 
-    src.noteOn(0); 
+    src.start(0); 
     setup = true; 
 } 
 
